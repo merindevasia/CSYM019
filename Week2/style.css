@@ -18,3 +18,33 @@
 .part4 p{
 	color: green;
 }
+.csym019{
+	background-color: #ADD8E6;
+	display: block;
+	color: black;
+
+}
+.csym019 p{
+	width: 180px;
+}
+.csym015{
+	background-color: yellow;
+	display: block;
+	color: black;
+		
+}
+.csym015 p{
+	width: 180px;
+}
+.csym025{
+	background-color: green;
+	display: block;
+	color: black;
+
+}
+.csym028{
+	background-color: red;
+	display: block;
+	color: black;
+
+}
