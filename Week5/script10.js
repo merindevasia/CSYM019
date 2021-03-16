@@ -1,23 +1,5 @@
 var interval = 0;
-function myKeyDown(event) {
- clearInterval(interval);
- if (event.keyCode == 37) {
- interval = setInterval(moveLeft, 10);
- }
- if (event.keyCode == 38) {
- interval =setInterval(moveUp, 10);
- }
- if (event.keyCode == 40) {
- interval =setInterval(moveDown, 10);
- }
- if (event.keyCode == 39) {
- interval =setInterval(moveRight, 10);
- }
-}
-function myLoadEvent() {
- document.addEventListener('keydown', myKeyDown);
-}
-document.addEventListener('DOMContentLoaded', myLoadEvent);
+
 
 function moveUp() {
  var element = document.getElementById('circle');
@@ -39,3 +21,25 @@ function moveRight() {
  var positionLeft = element.offsetLeft;
  element.style.left = positionLeft + 1 + 'px';
 }
+
+function myKeyDown(event) {
+ clearInterval(interval);
+ if (event.keyCode == 37) {
+ interval = setInterval(moveLeft, 10);
+ }
+ if (event.keyCode == 38) {
+ interval =setInterval(moveUp, 10);
+ }
+ if (event.keyCode == 40) {
+ interval =setInterval(moveDown, 10);
+ }
+ if (event.keyCode == 39) {
+ interval =setInterval(moveRight, 10);
+ }
+}
+
+function myLoadEvent() {
+ document.addEventListener('keydown', myKeyDown);
+}
+document.addEventListener('DOMContentLoaded', myLoadEvent);
+
